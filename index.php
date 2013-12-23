@@ -2,11 +2,9 @@
 <html lang="en">
 	<head>
 		<title>Audacious Productions | Home</title>
-		
 		<link rel="stylesheet" type="text/css" href="global.css"/>
-		<link href='http://fonts.googleapis.com/css?family=Mouse+Memoirs' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Mouse+Memoirs' rel='stylesheet' type='text/css'>
 	</head>
-	<!--Page-->
 	<body>
 		<div id="wrapper">
 			<header>
@@ -23,9 +21,9 @@
 				</nav>
 			</header>
 			<section>
-				<h2>Welcome.</h2>
-				<p>Welcome to the Audacious Productions website. Audacious Productions is a theatre group that runs at Comberton Village College.</p>
-			</section>
+				<h2>Welcome</h2>
+				<p>Welcome to the Audacious Productions website. Audacious Productions is a theatre group that runs at <a href="//www.combertonvc.org/">Comberton Village College</a></p>
+			</div>
 		</div>
 	</body>
 </html>

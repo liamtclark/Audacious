@@ -13,8 +13,8 @@
 				<nav>
 					<a href="#" class="current">Home</a>
 					<a href="#">About</a>
-					<a href="#">Latest Show</a>
-					<a href="#">Previous Shows</a>
+					<a href="#">Latest</a>
+					<a href="#">Shows</a>
 					<a href="#">Gallery</a>
 					<a href="#">Tickets</a>
 					<a href="#">Contact</a>

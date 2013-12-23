@@ -57,7 +57,6 @@ nav {
 
 nav a {
 	padding: 10px 0;
-	color:#F0F0F0;
 	font-size:15px;
 	font-weight: 300;
 	letter-spacing: 0.5px;
@@ -66,7 +65,8 @@ nav a {
 	width:14.28%;
 	text-align: center;
 	margin-left: 0%;
-	background-color:#333;
+	background-color:#ddd;
+	color: #333;
 }
 
 nav a:first-of-type {
@@ -74,11 +74,11 @@ nav a:first-of-type {
 }
 
 nav a:hover {
-	background-color:#555;
+	background-color:#eee;
 }
 
 nav a.current {
-	background-color: #222;
+	background-color: #ccc;
 }
 
 nav a:first-of-type {

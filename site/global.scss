@@ -80,9 +80,7 @@ section {
 
 .important {
 	color:#BF1E4B;
-	padding: 10px;
-	font-size: 18px;
-	@include border-radius(10px);
+	padding: 5px 0;
 }
 
 // None of this is needed:

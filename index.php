@@ -21,10 +21,10 @@
 					<a href="#">Contact</a>
 				</nav>
 			</header>
-			<div class="important">
-				NOTICE: This website is under construction...
-			</div>
 			<section>
+				<h2 class="important">
+					NOTICE: This website is under construction...
+				</h2>
 				<h2>Welcome</h2>
 				<p>Welcome to the Audacious Productions website. Audacious Productions is a theatre group that runs at <a href="//www.combertonvc.org/">Comberton Village College</a></p>
 		</div>

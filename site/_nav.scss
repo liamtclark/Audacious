@@ -1,0 +1,53 @@
+$nav-radius: 20px;
+
+nav {
+	margin: 15px 0;
+	padding-bottom: 40px;
+
+	@include breakpoint(mobile) {
+		padding-bottom: 0;
+	}
+
+	a {
+		padding: 10px 0;
+		font-size:15px;
+		font-weight: 300;
+		letter-spacing: 0.5px;
+		text-decoration:none;
+		float:left;
+		width:14.28%;
+		text-align: center;
+		margin-left: 0%;
+		background-color:#ddd;
+		color: #333;
+		@include single-transition(all,0.25s,ease-in-out);
+
+		@include breakpoint(mobile) {
+			float: none;
+			display: block;
+			width: 100%;
+		}
+		&:hover {
+			background-color:#eee;
+		}
+
+		&.current {
+			background-color: #ccc;
+		}
+
+		&:first-of-type {
+			margin-left: 0 !important;
+			@include border-radius($nav-radius 0 0 $nav-radius);
+			@include breakpoint(mobile) {
+				@include border-radius($nav-radius $nav-radius 0 0);
+			}
+		}
+
+		&:last-of-type {
+			@include border-radius(0 $nav-radius $nav-radius 0);
+			@include breakpoint(mobile) {
+				@include border-radius(0 0 $nav-radius $nav-radius);
+			}
+		}
+	}
+}

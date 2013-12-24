@@ -9,7 +9,7 @@ body {
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 10px 0;
   border-radius: 0 0 20px 20px;
 }
 
@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin: 8px 0;
 }
 
@@ -33,20 +33,29 @@ header {
   margin: 10px 0;
   padding: 0 10px;
 }
-
 header h1 {
   padding-top: 0;
 }
-
 header h2 {
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 20px;
+}
+@media only screen and (max-width: 768px) {
+  header h2 {
+    position: static;
+    text-align: right;
+  }
 }
 
 nav {
   margin: 15px 0;
   padding-bottom: 40px;
+}
+@media only screen and (max-width: 480px) {
+  nav {
+    padding-bottom: 0;
+  }
 }
 nav a {
   padding: 10px 0;
@@ -60,14 +69,15 @@ nav a {
   margin-left: 0%;
   background-color: #ddd;
   color: #333;
-  -webkit-transition: all 0.35s ease-in-out;
-  -moz-transition: all 0.35s ease-in-out;
-  -o-transition: all 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 @media only screen and (max-width: 480px) {
   nav a {
     float: none;
+    display: block;
     width: 100%;
   }
 }

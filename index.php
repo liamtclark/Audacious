@@ -4,6 +4,7 @@
 		<title>Audacious Productions | Home</title>
 		<link rel="stylesheet" type="text/css" href="site/global.css"/>
 		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Mouse+Memoirs' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 	</head>
 	<body>
 		<div id="wrapper">

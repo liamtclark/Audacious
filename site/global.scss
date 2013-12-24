@@ -1,5 +1,17 @@
 @import "compass/css3";
 
+@mixin breakpoint($point) {
+	@if $point == small-mobile {
+		@media only screen and (max-width: 320px)  { @content; }
+	}
+	@elseif $point == mobile {
+		@media only screen and (max-width: 480px)  { @content; }
+	}
+	@else if $point == tablet {
+		@media only screen and (max-width: 768px) { @content; }
+	}
+}
+
 body {
 	font-family:'Lato'sans-serif;
 	color: #333;
@@ -11,7 +23,7 @@ body {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 10px 0;
 	border-radius: 0 0 20px 20px;
 }
 
@@ -21,7 +33,7 @@ h1 {
 	margin: 12px 0;
 }
 h2 {
-	font-size: 18px;
+	font-size: 20px;
 	margin: 8px 0;
 }
 p {
@@ -32,21 +44,28 @@ header {
 	position: relative;
 	margin: 10px 0;
 	padding: 0 10px;
+	h1 {
+		padding-top: 0;
+	}
+	h2 {
+		position: absolute;
+		top: 5px;
+		right: 20px;
+		@include breakpoint(tablet) {
+			position: static;
+			text-align: right;
+		}
+	}
 }
-header h1 {
-	padding-top: 0;
-}
-header h2 {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-}
-
-
 
 nav {
 	margin: 15px 0;
 	padding-bottom: 40px;
+
+	@include breakpoint(mobile) {
+		padding-bottom: 0;
+	}
+
 	a {
 		padding: 10px 0;
 		font-size:15px;
@@ -59,10 +78,11 @@ nav {
 		margin-left: 0%;
 		background-color:#ddd;
 		color: #333;
-		@include single-transition(all,0.35s,ease-in-out);
+		@include single-transition(all,0.25s,ease-in-out);
 
-		@media only screen and (max-width: 480px) {
+		@include breakpoint(mobile) {
 			float: none;
+			display: block;
 			width: 100%;
 		}
 		&:hover {
@@ -76,14 +96,14 @@ nav {
 		&:first-of-type {
 			margin-left: 0 !important;
 			@include border-radius(20px 0 0 20px);
-			@media only screen and (max-width: 480px) {
+			@include breakpoint(mobile) {
 				@include border-radius(20px 20px 0 0);
 			}
 		}
 
 		&:last-of-type {
 			@include border-radius(0 20px 20px 0);
-			@media only screen and (max-width: 480px) {
+			@include breakpoint(mobile) {
 				@include border-radius(0 0 20px 20px);
 			}
 		}

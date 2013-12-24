@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family:'Lato'sans-serif;
+	font-family:'Lato',sans-serif;
 	color: #333;
 	margin:0;
 }
@@ -121,3 +121,32 @@ section {
 		}
 	}
 }
+
+.important {
+	background-color:#BF1E4B;
+	padding: 6px;
+	font-size: 18px;
+	color: white;
+	@include border-radius(10px);
+}
+
+// None of this is needed:
+
+//#right-1
+//{
+//	float:right;
+//	background-color:#CCC;
+//	color:#000000;
+//	width:25%;
+//	padding-top:6px;
+//	padding-bottom:6px;
+//	font-size:14px;
+//}
+
+//#left{
+//	border-top-left-radius:0.5em;
+//	border-bottom-left-radius:0.5em;
+//}
+//#right-1{border-top-right-radius:0.5em;border-bottom-right-radius:0.5em;}
+
+//.red{background-color:#BF1E4B;}

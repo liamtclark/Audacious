@@ -28,16 +28,6 @@ p {
   font-size: 16px;
 }
 
-section a {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted black;
-}
-
-section a:hover {
-  border-bottom: 1px solid black;
-}
-
 header {
   position: relative;
   margin: 10px 0;
@@ -70,6 +60,16 @@ nav a {
   margin-left: 0%;
   background-color: #ddd;
   color: #333;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+@media only screen and (max-width: 480px) {
+  nav a {
+    float: none;
+    width: 100%;
+  }
 }
 nav a:hover {
   background-color: #eee;
@@ -79,32 +79,46 @@ nav a.current {
 }
 nav a:first-of-type {
   margin-left: 0 !important;
-  border-bottom-left-radius: 1em;
-  border-top-left-radius: 1em;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
+  -ms-border-radius: 20px 0 0 20px;
+  -o-border-radius: 20px 0 0 20px;
+  border-radius: 20px 0 0 20px;
 }
-nav a:last-of-type {
-  border-bottom-right-radius: 1em;
-  border-top-right-radius: 1em;
-}
-
 @media only screen and (max-width: 480px) {
-  nav {
-    width: 100%;
-  }
-
-  nav a {
-    display: block;
-    width: 100%;
-  }
-
   nav a:first-of-type {
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
     border-radius: 20px 20px 0 0;
   }
-
+}
+nav a:last-of-type {
+  -webkit-border-radius: 0 20px 20px 0;
+  -moz-border-radius: 0 20px 20px 0;
+  -ms-border-radius: 0 20px 20px 0;
+  -o-border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0;
+}
+@media only screen and (max-width: 480px) {
   nav a:last-of-type {
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
   }
 }
+
 section {
   padding: 0 10px;
+}
+section a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+section a:hover {
+  border-bottom: 1px solid black;
 }

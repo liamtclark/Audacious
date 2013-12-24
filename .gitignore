@@ -22,4 +22,4 @@ ehthumbs.db
 Thumbs.db
 
 # SASS cache #
-sass-cache/
+.sass-cache/

@@ -20,12 +20,6 @@
 					<a href="#">Tickets</a>
 					<a href="#">Contact</a>
 				</nav>
-					<!-- Not needed: people know the date <div id="right-1">
-					<<center><?php //echo date( 'l jS F' ); ?></center>
-					<div id="right-2">
-					<input type="image" src="icons/close.png"style="width:12px;" />
-					</div>
-					</div>-->
 			</header>
 			<div class="important">
 				NOTICE: This website is under construction...

@@ -79,10 +79,9 @@ section {
 }
 
 .important {
-	background-color:#BF1E4B;
-	padding: 6px;
+	color:#BF1E4B;
+	padding: 10px;
 	font-size: 18px;
-	color: white;
 	@include border-radius(10px);
 }
 

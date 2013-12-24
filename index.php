@@ -20,24 +20,19 @@
 					<a href="#">Tickets</a>
 					<a href="#">Contact</a>
 				</nav>
-				<br/>
-				
-					<div class="important">
-					NOTICE: This website is under construction...
-					</div>
 					<!-- Not needed: people know the date <div id="right-1">
 					<<center><?php //echo date( 'l jS F' ); ?></center>
 					<div id="right-2">
 					<input type="image" src="icons/close.png"style="width:12px;" />
 					</div>
 					</div>-->
-					
-				<br/><br/>
 			</header>
+			<div class="important">
+				NOTICE: This website is under construction...
+			</div>
 			<section>
 				<h2>Welcome</h2>
-					<p>Welcome to the Audacious Productions website. Audacious Productions is a theatre group that runs at <a href="//www.combertonvc.org/">Comberton Village College</a></p>
-					
+				<p>Welcome to the Audacious Productions website. Audacious Productions is a theatre group that runs at <a href="//www.combertonvc.org/">Comberton Village College</a></p>
 		</div>
 	</body>
 </html>

@@ -28,4 +28,4 @@ section { padding: 0 10px; }
 section a { color: black; text-decoration: none; border-bottom: 1px dotted black; }
 section a:hover { border-bottom: 1px solid black; }
 
-.important { background-color: #BF1E4B; padding: 6px; font-size: 18px; color: white; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }
+.important { color: #BF1E4B; padding: 10px; font-size: 18px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px; border-radius: 10px; }

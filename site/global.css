@@ -1,0 +1,110 @@
+body {
+  font-family: 'Lato'sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+#wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: 'Mouse Memoirs', sans-serif;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+section a {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+section a:hover {
+  border-bottom: 1px solid black;
+}
+
+header {
+  position: relative;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+header h1 {
+  padding-top: 0;
+}
+
+header h2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+nav {
+  margin: 15px 0;
+  padding-bottom: 40px;
+}
+nav a {
+  padding: 10px 0;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  float: left;
+  width: 14.28%;
+  text-align: center;
+  margin-left: 0%;
+  background-color: #ddd;
+  color: #333;
+}
+nav a:hover {
+  background-color: #eee;
+}
+nav a.current {
+  background-color: #ccc;
+}
+nav a:first-of-type {
+  margin-left: 0 !important;
+  border-bottom-left-radius: 1em;
+  border-top-left-radius: 1em;
+}
+nav a:last-of-type {
+  border-bottom-right-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    width: 100%;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+  }
+
+  nav a:first-of-type {
+    border-radius: 20px 20px 0 0;
+  }
+
+  nav a:last-of-type {
+    border-radius: 0 0 20px 20px;
+  }
+}
+section {
+  padding: 0 10px;
+}
